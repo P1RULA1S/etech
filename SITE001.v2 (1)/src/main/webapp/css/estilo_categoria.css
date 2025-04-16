@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* Variables personalizadas */
+:root {
+    --mt-accent: #14b8a6;
+    --mt-bg: #0a0a0a;
+    --mt-color-title: #fff;
+    --mt-color-text: #fff;
+    --mt-title-size: 2rem;
+    --mt-text-size: 1.125rem;
+    --mt-icon-size: 26px;
+    --mt-content: 500px;
+    --mt-gap: 1.5rem;
+    --mt-transition: .3s;
+}
+
+/* Animación de aparición */
+@keyframes mainteIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor principal */
+.mantenimiento {
+    position: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--mt-bg);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Estilos del contenido */
+.contenido-mantenimiento {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--mt-content);
+    gap: var(--mt-gap);
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-2rem);
+    animation: mainteIn 1s ease forwards;
+}
+
+.titulo-mantenimiento {
+    font-size: var(--mt-title-size);
+    color: var(--mt-color-title);
+    font-weight: 700;
+}
+
+.texto-mantenimiento {
+    font-size: var(--mt-text-size);
+    color: var(--mt-color-text);
+    line-height: 1.5;
+    animation-delay: 0.5s;
+}
+
+/* Redes sociales */
+.redes-mantenimiento {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation-delay: 1s;
+}
+
+.redes-item {
+    color: var(--mt-accent);
+    transition: color var(--mt-transition);
+}
+
+.redes-item:hover {
+    color: #fff;
+}
+
+.icono {
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    stroke-width: 2;
+    width: var(--mt-icon-size);
+    height: var(--mt-icon-size);
+    display: block;
+}
+
+/* Animación de las ondas */
+@keyframes wave {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.onda {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.onda-item, .onda-item::after, .onda-item::before {
+    content: "";
+    position: absolute;
+    width: 380rem;
+    height: 380rem;
+    background: var(--mt-accent);
+    border-radius: 46%;
+    animation: wave 15s infinite linear;
+    pointer-events: none;
+}
+
+.onda-item {
+    top: 75%;
+    left: 50%;
+    margin-left: -190rem;
+}
+
+.onda-item::after {
+    animation-duration: 28s;
+    opacity: 0.5;
+}
+
+.onda-item::before {
+    animation-duration: 20s;
+    opacity: 0.1;
+}
+
+/* Ajustes globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--mt-bg);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}

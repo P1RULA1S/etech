@@ -1,0 +1,89 @@
+body {
+  background-color: #353535;
+}
+
+.registro {
+  margin: auto;
+  width: 960px;
+}
+
+section {
+  color: #ffffff;
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px;
+  width: 600px;
+  float: left;
+  background: #23404b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Inputs generales */
+input[type="text"],
+input[type="email"],
+input[type="month"],
+input[type="color"],
+input[type="file"],
+select,
+input[type="password"] {
+  padding: 5px;
+  border: 2px solid #f1faee;
+  border-radius: 5px;
+  width: 95%;
+  background-color: transparent; 
+  color: #ffffff; 
+}
+
+select {
+  padding: 5px;
+  background-color: #495057; 
+  color: #000000; 
+  border: 2px solid #f1faee;
+  border-radius: 5px;
+}
+
+select:required:valid {
+  border: 2px solid green; 
+  color: #ffff;
+}
+
+select:required:invalid {
+  border: 2px solid #ff0000; 
+}
+
+select option {
+  background-color: #ffffff; 
+  color: #000000; 
+}
+
+/* Campo de contraseña */
+input[type="password"]:required:valid,
+input[type="password"]:required:invalid {
+  background-color: transparent; 
+  color: #ffffff; 
+}
+
+input:required:valid {
+  border: 2px solid green; 
+}
+
+input:required:invalid {
+  border: 2px solid #ff0000; 
+}
+
+input#fileCV:required:valid,
+input#fileCV:required:invalid {
+  background-color: transparent; 
+  border: 2px solid #f1faee; 
+  color: #ffffff; 
+}
+/* Mensajes informativos */
+.info-provincia,
+.info-edad {
+  font-size: 14px;
+  font-style: italic;
+  color: #e0e0e0;
+  margin: 3px 0 0 5px;
+}
