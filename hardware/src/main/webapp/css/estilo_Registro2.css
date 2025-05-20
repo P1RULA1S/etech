@@ -1,0 +1,159 @@
+body {
+    background-color: #353535;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Quantico", sans-serif;
+}
+
+.user-bar {
+    background-color: #434753;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.user-bar span,
+.user-bar a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.user-bar a:hover {
+    background-color: #2a9d8f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: #23404b;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Ethnocentric Rg', sans-serif;
+    font-size: 50px;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #aaa, 0 2px 2px #000;
+    animation: blinkWhite 1s linear infinite;
+}
+
+@keyframes blinkWhite {
+    78% { color: #fff; text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #aaa, 0 2px 2px #000; }
+    79% { color: #333; }
+    80% { text-shadow: none; }
+    81% { color: #fff; text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #aaa, 0 2px 2px #000; }
+    82% { color: #333; text-shadow: none; }
+    83% { color: #fff; text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #aaa, 0 2px 2px #000; }
+    92% { color: #333; text-shadow: none; }
+    92.5% { color: #fff; text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #aaa, 0 2px 2px #000; }
+}
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px;
+}
+
+.registro-form {
+    background-color: #23404b;
+    padding: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.registro-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.registro-table td {
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select,
+input[type="password"] {
+    padding: 10px;
+    border: 2px solid #f1faee;
+    border-radius: 5px;
+    width: 95%;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+input:required:valid,
+select:required:valid {
+    border-color: green;
+}
+
+input:required:invalid,
+select:required:invalid {
+    border-color: #ff0000;
+}
+
+select {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+    display: block;
+    color: #ffffff;
+    font-family: "Quantico", sans-serif;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}

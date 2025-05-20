@@ -1,0 +1,23 @@
+.productos-table {
+    border: 2px solid #2a9d8f;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #353535;
+}
+
+.productos-table th {
+    background: linear-gradient(90deg, #2a9d8f, #21867a);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.productos-table td {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.productos-table tr:hover td {
+    background-color: #2d3142;
+    transform: scale(1.01);
+}
