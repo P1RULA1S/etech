@@ -1,0 +1,159 @@
+/* Estilos específicos para la página de actualización */
+.contenedor-formulario {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.formulario-actualizar {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mensaje.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #c62828;
+}
+
+.mensaje.exito {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 4px solid #2e7d32;
+}
+
+.campo-actualizar {
+    margin-bottom: 20px;
+}
+
+.campo-actualizar label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-family: 'Quantico', sans-serif;
+}
+
+.campo-actualizar input[type="text"],
+.campo-actualizar input[type="number"],
+.campo-actualizar select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Quantico', sans-serif;
+    font-size: 15px;
+}
+
+.campo-archivo .contenedor-archivo {
+    position: relative;
+    margin-top: 5px;
+}
+
+#input-archivo {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.etiqueta-archivo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: 1px dashed #999;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.etiqueta-archivo:hover {
+    background-color: #e0e0e0;
+}
+
+.texto-archivo {
+    font-family: 'Quantico', sans-serif;
+}
+
+.nota-archivo {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.botones-accion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-actualizar, .btn-cancelar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Quantico', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-actualizar {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-actualizar:hover {
+    background-color: #3d8b40;
+}
+
+.btn-cancelar {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    background-color: #d32f2f;
+}
+
+.btn-regresar, .btn-cerrar-sesion {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Quantico', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+.btn-regresar {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.btn-cerrar-sesion {
+    background-color: #2a9d8f;
+    color: white;
+}
+

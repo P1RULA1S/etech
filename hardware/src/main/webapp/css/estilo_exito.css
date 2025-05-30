@@ -1,0 +1,59 @@
+/* Estilo para el botón "Volver a Productos" */
+.btn-primary {
+    background-color: #2a9d8f; /* Verde medio oscuro */
+    border-color: #2a9d8f;
+    font-family: 'Quantico', sans-serif;
+    padding: 10px 20px;
+    margin: 10px 0; /* Margen solo arriba y abajo */
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #21867a; /* Verde más oscuro al pasar el ratón */
+    border-color: #21867a;
+}
+
+/* Estilo para el botón "Ir al Menú" */
+.btn-secondary {
+    background-color: #ff6200; /* Naranja */
+    border-color: #ff6200;
+    font-family: 'Quantico', sans-serif;
+    padding: 10px 20px;
+    margin: 10px 0; /* Margen solo arriba y abajo */
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e55b00; /* Naranja más oscuro al pasar el ratón */
+    border-color: #e55b00;
+}
+
+/* Centrar los botones y apilarlos verticalmente */
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.text-center .btn {
+    width: 200px; /* Ancho fijo para que ambos botones tengan el mismo tamaño */
+    text-align: center;
+}
+
+/* Centrar el texto dentro del alert */
+.alert-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    text-align: center;
+    padding: 15px;
+}
+/* Ajustes para el contenedor principal */
+.productos-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}

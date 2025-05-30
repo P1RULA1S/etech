@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* Estilos generales para la página de bitácora */
+body {
+    background-color: #353535;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la sección principal */
+section {
+    color: #ffffff;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background: #23404b;
+    box-sizing: border-box;
+}
+
+section h3 {
+    font-family: "Quantico", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-family: "Quantico", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    margin: 0;
+    padding: 20px;
+    background: #23404b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para la tabla */
+.table {
+    color: #ffffff;
+    font-family: "Quantico", sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    background-color: #434753;
+    color: #ffffff;
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #2a9d8f;
+}
+
+.table tbody tr {
+    background-color: #2a2a2a;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #353535;
+}
+
+.table tbody td {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 1px solid #434753;
+}
+
+/* Estilo para las etiquetas de operación */
+.badge {
+    font-family: "Quantico", sans-serif;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffca2c !important;
+    color: #212529 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Estilo para el contenedor agrupar */
+.agrupar {
+    border: 1px solid transparent;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para el aside */
+aside {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px;
+    padding: 30px;
+    width: 200px;
+    border: 1px solid transparent;
+    float: right;
+    background: #dfdfdf;
+    align-items: center;
+}
+
+/* Estilo para el botón de refrescar */
+.btn-refresh {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    font-family: "Quantico", sans-serif;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-refresh:hover {
+    background-color: #1f776d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-refresh img {
+    width: 14px;
+    height: 14px;
+}
+
+/* Asegurar que la tabla sea responsive */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+/* Estilo para las celdas con texto largo */
+.table tbody td {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Estilo para tooltips */
+.tooltip-inner {
+    max-width: 500px;
+    text-align: left;
+    background-color: #2a9d8f;
+    font-family: "Quantico", sans-serif;
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, 
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #2a9d8f;
+}
+
+/* Mejorar la visualización de los valores */
+.table tbody td:hover {
+    white-space: normal;
+    overflow: visible;
+    z-index: 1000;
+    position: relative;
+    background-color: #434753;
+}

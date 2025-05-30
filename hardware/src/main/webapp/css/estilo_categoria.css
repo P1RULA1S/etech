@@ -1,0 +1,76 @@
+.contenedor-busqueda {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.seccion-busqueda {
+    background: #434753;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-busqueda h2 {
+    color: white;
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.seccion-busqueda h2 i {
+    color: #2a9d8f;
+    margin-right: 10px;
+}
+
+.formulario-categoria {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.grupo-formulario select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+}
+
+.btn-consulta {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-consulta:hover {
+    background: #21867a;
+}
+
+.btn-consulta i {
+    margin-right: 8px;
+}
+
+
